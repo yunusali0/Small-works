@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rokkitt";
+    width: 970px;
+    margin: 0 auto;
+}
+
+.accordion {
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 20px 15px;
+    font-size: 30px;
+    font-family: "Rokkitt";
+    font-weight: bold;
+    background: cadetblue;
+    transition: 0.3s;
+    position: relative;
+    outline: none;
+}
+
+.accordion:hover{
+    background: rgb(8, 41, 43);
+    color: white;
+    transition: 0.3s;
+}
+
+.accordion::after{
+    content: "-";
+    position: absolute;
+    right: 2%;
+}
+
+.active{
+    background: rgb(8, 41, 43);
+    color: white;
+}
+
+.active::after{
+    content: "+";
+    position: absolute;
+    right: 2%;
+}
+
+.content {
+    width: 100%;
+    background-color: rgb(169, 214, 216);
+    padding: 20px 15px;
+    font-size: 20px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
